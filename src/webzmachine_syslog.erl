@@ -4,7 +4,6 @@
 
 -module(webzmachine_syslog).
 
--include_lib("webzmachine/include/wm_reqdata.hrl").
 -include_lib("webzmachine/include/webmachine_logger.hrl").
 
 %%
