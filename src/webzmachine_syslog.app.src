@@ -1,0 +1,11 @@
+{application, webzmachine_syslog,
+ [
+  {description, "Provides webzmachine's access log via syslog"},
+  {vsn, "1.0"},
+  {registered, []},
+  {applications, [
+                  kernel,
+                  stdlib
+                 ]},
+  {env, []}
+ ]}.
