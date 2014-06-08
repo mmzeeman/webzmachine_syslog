@@ -11,7 +11,7 @@
 %%
 
 log(Msg, Name) ->
-    webzmachine_syslog:log(Name, Msg),
+    webzmachine_syslog_server:log(Name, Msg),
     ok.
 
 
