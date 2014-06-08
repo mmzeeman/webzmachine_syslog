@@ -4,17 +4,14 @@
 
 -module(webzmachine_syslog).
 
--include_lib("webzmachine/include/webmachine_logger.hrl").
+-export([log/2]).
 
 %%
 %%
 %%
 
-log_access(#wm_log_data{}=LogData, Name) ->
-    Msg = format_req(LogData),
+log(Msg, Name) ->
     webzmachine_syslog:log(Name, Msg),
     ok.
 
-format_req(_LogData) ->
-    "msg".
 
